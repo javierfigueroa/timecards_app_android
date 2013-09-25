@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/colors.xml -->
+    <color name="black_overlay">#66000000</color>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/attrs.xml -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="buttonBarStyle" format="reference" />
+        <attr name="buttonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/dimens.xml -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings_activity_login.xml -->
+    <string name="action_forgot_password">Recover lost password</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings_activity_login.xml -->
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
+    <string name="app_name">Timecards</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="capture_button">Capture</string>
+    <string name="clock_in_button">Clock In</string>
+    <string name="clock_in_clocked_button">Youre on the clock!</string>
+    <string name="clock_out_button">Clock Out</string>
+    <string name="clocking_in">Clocking In...</string>
+    <string name="clocking_out">Clocking Out...</string>
+    <string name="done_button">Done</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings_activity_login.xml -->
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
+    <string name="loading">Loading...</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings_activity_login.xml -->
+    <string name="login_progress_signing_in">Signing in…</string>
+    <string name="prompt_company">Company Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings_activity_login.xml -->
+    <string name="title_activity_login">Sign in</string>
+    <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/styles.xml -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

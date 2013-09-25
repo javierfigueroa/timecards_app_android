@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ActionsActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/actions_view">
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:text="Clock In"
+                    android:id="@+id/clock_in_button"
+                    android:checked="false"
+                    android:textOn="Clock In"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/clock_out_button"
+                    android:layout_marginTop="37dp"
+                    android:onClick="clockIn"/>
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:text="Clock Out"
+                    android:id="@+id/clock_out_button"
+                    android:checked="false"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="clockOut"/>
+
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:id="@+id/sign_out_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="signOut"
+                android:layout_marginTop="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

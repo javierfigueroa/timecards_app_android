@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.timecards">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.front"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.timecards.app.App" android:theme="@style/AppTheme">
+
+        <service android:name="com.dg.libs.rest.services.HTTPRequestExecutorService"/>
+        <activity android:label="@string/app_name" android:name="com.timecards.app.ActionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_login" android:name="com.timecards.app.LoginActivity" android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:label="@string/title_activity_camera" android:name="com.timecards.app.CameraActivity" android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity android:label="@string/title_activity_confirmation" android:name="com.timecards.app.ConfirmationActivity">
+        </activity>
+    </application>
+
+</manifest>

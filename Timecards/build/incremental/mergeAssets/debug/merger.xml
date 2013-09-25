@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/debug/assets" />
+    </dataSet>
+
+</merger>
