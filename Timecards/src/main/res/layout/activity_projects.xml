@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectsActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@android:id/list"
+        android:layout_gravity="center"
+        android:cacheColorHint="#000000"
+        android:dividerHeight="1dip"
+        android:layout_marginTop="63dip"
+        android:layout_marginBottom="40dip" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="73dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/title_activity_projects"
+        android:id="@+id/textView"
+        android:layout_gravity="left|top"
+        android:textIsSelectable="true"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/timecards_font_color" />
+</FrameLayout>

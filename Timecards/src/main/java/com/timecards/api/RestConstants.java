@@ -17,6 +17,10 @@ public class RestConstants {
 
     public static final String CLOCK_OUT = "/timecards/{id}.json";
 
+    public static final String PROJECTS = "/projects.json";
+
+    public static final String SET_PROJECT = "/timecards/{id}.json";
+
     private String mCompany;
 
     private static RestConstants instance;
@@ -34,6 +38,7 @@ public class RestConstants {
     }
 
     public void setCompany(String company) {
+
         mCompany = company;
     }
 }

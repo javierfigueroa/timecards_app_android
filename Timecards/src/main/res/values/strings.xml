@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Timecards</string>
+    <string name="app_name">timecards</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_projects">Select a project</string>
     <string name="title_activity_camera">CameraActivity</string>
     <string name="cancel_button">Cancel</string>
     <string name="done_button">Done</string>
     <string name="capture_button">Capture</string>
-    <string name="clock_in_button">Clock In</string>
-    <string name="clock_out_button">Clock Out</string>
-    <string name="clocking_in">Clocking In...</string>
-    <string name="clocking_out">Clocking Out...</string>
+    <string name="clock_in_button">clock in</string>
+    <string name="clock_out_button">clock out</string>
+    <string name="clocking_in">clocking In...</string>
+    <string name="clocking_out">clocking Out...</string>
     <string name="clock_in_clocked_button">Youre on the clock!</string>
     <string name="loading">Loading...</string>
     <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <string name="assign_project">assign project</string>
+    <string name="time_logged">time logged</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start_new_timecard">Start a new timecard by clocking in</string>
 
 </resources>

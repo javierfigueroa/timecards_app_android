@@ -35,8 +35,15 @@ public class Timecard {
 
     @JsonProperty(value = "id")
     String id;
+
+    @JsonProperty(value = "project_id")
+    String projectId;
+    @JsonProperty(value = "photo_in_url")
+    String photoInUrl;
+    @JsonProperty(value = "photo_out_url")
+    String photoOutUrl;
     @JsonProperty(value = "timestamp_in")
-//    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'.'SSSZ")
+//    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="UTC")
     Date timestampIn;
 //    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'.'SSSZ")
     @JsonProperty(value = "timestamp_out")
@@ -52,12 +59,36 @@ public class Timecard {
     @JsonProperty(value = "user_id")
     int userId;
 
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
+    }
+
     public int getUserId() {
         return userId;
     }
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getPhotoOutUrl() {
+        return photoOutUrl;
+    }
+
+    public void setPhotoOutUrl(String photoOutUrl) {
+        this.photoOutUrl = photoOutUrl;
+    }
+
+    public String getPhotoInUrl() {
+        return photoInUrl;
+    }
+
+    public void setPhotoInUrl(String photoInUrl) {
+        this.photoInUrl = photoInUrl;
     }
 
     public void setTimestampIn(Date timestampIn) {

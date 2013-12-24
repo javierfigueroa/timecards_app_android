@@ -23,6 +23,16 @@ public class User {
     String email;
     @JsonProperty
     String password;
+    @JsonProperty
+    String company;
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
 
     public String getLastName() {
         return lastName;

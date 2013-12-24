@@ -2,6 +2,7 @@ package com.timecards.api;
 
 import android.content.Context;
 
+import com.timecards.api.model.Project;
 import com.timecards.api.model.Timecard;
 import com.timecards.api.model.User;
 
@@ -9,6 +10,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.List;
 
 import retrofit.Callback;
 import retrofit.mime.TypedFile;
@@ -36,6 +38,22 @@ public class Service {
 
         Endpoints service = ServiceAdapter.getServiceAdapter(context).create(Endpoints.class);
         service.getToday(callback);
+    }
+
+    public static void getProjects(Context context,
+                                   Callback<List<Project>> callback) {
+        Endpoints service = ServiceAdapter.getServiceAdapter(context).create(Endpoints.class);
+        service.getProjects(callback);
+    }
+
+    public static void setProject(Context context,
+                                  Timecard timecard,
+                                  Project project,
+                                  Callback<Timecard> callback) {
+
+        TypedString projectId = new TypedString(String.valueOf(project.getId()));
+        Endpoints service = ServiceAdapter.getServiceAdapter(context).create(Endpoints.class);
+        service.setProject(timecard.getId(), projectId, callback);
     }
 
     public static void clockIn(final Context context,

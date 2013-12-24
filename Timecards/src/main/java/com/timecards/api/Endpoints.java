@@ -1,7 +1,10 @@
 package com.timecards.api;
 
+import com.timecards.api.model.Project;
 import com.timecards.api.model.Timecard;
 import com.timecards.api.model.User;
+
+import java.util.List;
 
 import retrofit.Callback;
 import retrofit.http.Field;
@@ -15,6 +18,7 @@ import retrofit.http.Path;
 import retrofit.mime.TypedFile;
 import retrofit.mime.TypedString;
 
+
 /**
  * Created by javier on 9/23/13.
  */
@@ -22,6 +26,16 @@ public interface Endpoints {
 
     @GET(RestConstants.TODAY_TIMECARD)
     public void getToday(Callback<Timecard> callback);
+
+
+    @GET(RestConstants.PROJECTS)
+    public void getProjects(Callback<List<Project>> callback);
+
+    @Multipart
+    @PUT(RestConstants.SET_PROJECT)
+    public void setProject(@Path("id") String timecardId,
+                           @Part("timecard[project_id]") TypedString projectId,
+                           Callback<Timecard> callback);
 
     @FormUrlEncoded
     @POST(RestConstants.LOGIN_URL)

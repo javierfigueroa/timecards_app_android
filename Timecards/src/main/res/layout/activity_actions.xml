@@ -2,11 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".ActionsActivity">
+    tools:context=".ActionsActivity"
+    android:background="@color/black_overlay"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -24,40 +23,217 @@
             android:layout_height="fill_parent"
             android:id="@+id/actions_view">
 
-            <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="100dp"
-                    android:text="Clock In"
-                    android:id="@+id/clock_in_button"
-                    android:checked="false"
-                    android:textOn="Clock In"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignLeft="@+id/clock_out_button"
-                    android:layout_marginTop="37dp"
-                    android:onClick="clockIn"/>
-
-            <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="100dp"
-                    android:text="Clock Out"
-                    android:id="@+id/clock_out_button"
-                    android:checked="false"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:onClick="clockOut"/>
-
-            <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sign Out"
-                    android:id="@+id/sign_out_button"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:onClick="signOut"
-                android:layout_marginTop="50dp" />
-
         </LinearLayout>
     </ScrollView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/date_layout"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="left|top"
+            android:src="@drawable/calendaricon"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Wednesday"
+            android:id="@+id/dayOfWeek_textView"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="@color/timecards_font_color"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nov 23, 2013"
+            android:id="@+id/date_textView"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/timecards_font_color" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/clock_in_button"
+        android:id="@+id/timecard_layout"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="12:45"
+            android:id="@+id/hhmm_textView"
+            android:layout_gravity="center"
+            android:textColor="@color/timecards_font_color"
+            android:textSize="45dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/clockicon"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="2dp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/imageView4"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/greenarrowicon"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="-10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PM"
+            android:id="@+id/amPm_textView"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/timecards_font_color"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="70dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/time_logged"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="@color/timecards_font_color"
+            android:layout_marginBottom="60dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView5"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/loggedtimearea"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="00h:00m"
+            android:id="@+id/timeLogged_textView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="23dp"
+            android:textColor="@color/timecards_font_color" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/frameLayout"
+        android:background="#1c2329"
+        android:layout_margin="0dp"
+        android:layout_alignParentEnd="false"
+        android:padding="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/avatar_imageView"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="52dp"
+            android:src="@drawable/profileavatar"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/username_textView"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/timecards_font_color"
+            android:phoneNumber="false" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/sing_out_button"
+            android:layout_gravity="right|top"
+            android:focusableInTouchMode="true"
+            android:onClick="signOut"
+            android:background="@drawable/logouticon50"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="68dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/start_new_timecard"
+        android:id="@+id/coach_textview"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textSize="20dp"
+        android:textColor="@color/timecards_font_color"
+        android:gravity="center"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="true" />
+
+    <Button
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:text="Clock In"
+            android:id="@+id/clock_in_button"
+            android:checked="false"
+            android:textOn="Clock In"
+        android:onClick="clockIn"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/greenbtn"
+        android:layout_above="@+id/secondary_action_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="40dp"
+        android:text="@string/assign_project"
+        android:id="@+id/secondary_action_button"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/whitebtn"
+        android:visibility="invisible"
+        android:onClick="onSelectProject" />
 
 </RelativeLayout>

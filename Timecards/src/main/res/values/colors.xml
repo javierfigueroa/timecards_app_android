@@ -1,5 +1,6 @@
 <resources>
-
-    <color name="black_overlay">#66000000</color>
-
+    <color name="timecards_font_color">#AAB3BC</color>
+    <color name="black_overlay">#222c33</color>
+    <drawable name="focused">#ff5500</drawable>
+    <drawable name="selected">#FF00FF</drawable>
 </resources>

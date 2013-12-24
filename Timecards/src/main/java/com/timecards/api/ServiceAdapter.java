@@ -54,7 +54,7 @@ public class ServiceAdapter {
     public RestAdapter getRestAdapter() {
         if (restAdapter == null) {
             HttpParams httpParams = new BasicHttpParams();
-            HttpConnectionParams.setConnectionTimeout(httpParams, 2000);
+            HttpConnectionParams.setConnectionTimeout(httpParams, 100 * 1000);
             final DefaultHttpClient client = new DefaultHttpClient(httpParams);
 
             restAdapter = new RestAdapter.Builder()
