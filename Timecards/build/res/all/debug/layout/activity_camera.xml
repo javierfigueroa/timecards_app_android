@@ -29,17 +29,19 @@
         android:id="@+id/button_done"
         android:text="@string/done_button"
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="right|bottom"
-        />
+        android:background="@color/black_overlay"
+        android:textColor="@color/timecards_font_color" />
 
     <Button
         android:id="@+id/button_capture"
         android:text="@string/capture_button"
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="left|bottom"
-        />
+        android:background="@color/black_overlay"
+        android:textColor="@color/timecards_font_color" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->

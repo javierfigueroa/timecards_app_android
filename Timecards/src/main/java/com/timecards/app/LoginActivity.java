@@ -84,13 +84,15 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
         SharedPreferences preferences = getSharedPreferences(LoginActivity.PREFS_NAME, 0);
         String userJson = preferences.getString(LoginActivity.USER, null);
 
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            User user = mapper.readValue(userJson, User.class);
-            mCompanyView.setText(user.getCompany());
-            mEmailView.setText(user.getEmail());
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (userJson != null) {
+            ObjectMapper mapper = new ObjectMapper();
+            try {
+                User user = mapper.readValue(userJson, User.class);
+                mCompanyView.setText(user.getCompany());
+                mEmailView.setText(user.getEmail());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {

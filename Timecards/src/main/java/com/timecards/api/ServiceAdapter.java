@@ -94,6 +94,7 @@ public class ServiceAdapter {
                             User user = (User)mapper.readValue(json, User.class);
                             String auth =new String(Base64.encode((user.getEmail() + ":" + user.getPassword()).getBytes(), Base64.URL_SAFE | Base64.NO_WRAP));
                             request.addHeader("Authorization", "Basic " + auth);
+                            request.addHeader("Accept", "application/json");
 
                         } catch (IOException e) {
                             e.printStackTrace();

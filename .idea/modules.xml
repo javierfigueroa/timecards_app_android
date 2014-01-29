@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Timecards.iml" filepath="$PROJECT_DIR$/Timecards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Timecards/Timecards-Timecards.iml" filepath="$PROJECT_DIR$/Timecards/Timecards-Timecards.iml" />
+    </modules>
+  </component>
+</project>
+

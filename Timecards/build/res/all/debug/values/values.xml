@@ -547,7 +547,8 @@
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
     <eat-comment />
 
-    <string name="app_name">timecards</string>
+    <string name="app_name">Timecards</string>
+    <string name="app_name_lowercase">timecards</string>
     <string name="assign_project">assign project</string>
     <string name="cancel_button">Cancel</string>
     <string name="capture_button">Capture</string>

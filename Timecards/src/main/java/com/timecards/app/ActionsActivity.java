@@ -35,6 +35,7 @@ import com.timecards.api.model.Timecard;
 import com.timecards.api.model.User;
 import com.timecards.libs.ProgressHUD;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -345,7 +346,7 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
                     double longitude = mLocation.getLongitude();
 
                     if (photo != null && latitude != 0) {
-                        submitTimecard(photo, requestCode);
+                        submitTimecard(rotateImageBytes(photo), requestCode);
                     }
 
                 } catch (Exception e) {
@@ -448,12 +449,28 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
 
             //rotate original image
             Matrix matrix = new Matrix();
-            matrix.postRotate(CameraPreview.ROTATION_DEGREES);
+//            matrix.postRotate(CameraPreview.ROTATION_DEGREES);
 
             Bitmap bitmap = Bitmap.createBitmap(originalImage, 0, 0, originalImage.getWidth(), originalImage.getHeight(),
                     matrix, true);
             return getCircledBitmap(bitmap);
         }  catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static byte[] rotateImageBytes(byte[] bytes) {
+        try {
+            Bitmap thePicture = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+            Matrix m = new Matrix();
+            m.postRotate(CameraPreview.ROTATION_DEGREES);
+            thePicture = Bitmap.createBitmap(thePicture, 0, 0, thePicture.getWidth(), thePicture.getHeight(), m, true);
+
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            thePicture.compress(Bitmap.CompressFormat.JPEG, 100, bos);
+            return bos.toByteArray();
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
