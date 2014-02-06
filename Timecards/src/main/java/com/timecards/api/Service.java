@@ -29,7 +29,7 @@ public class Service {
 
         RestConstants.getInstance().setCompany(company);
 
-        Endpoints service = ServiceAdapter.getServiceAdapter(context).create(Endpoints.class);
+        Endpoints service = ServiceAdapter.getServiceAdapter(context, true).create(Endpoints.class);
         service.signIn(username, password, callback);
     }
 
@@ -66,7 +66,7 @@ public class Service {
         int day = calendar.get(Calendar.DAY_OF_MONTH);
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH)+1;
-        int hour = calendar.get(Calendar.HOUR);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int minute = calendar.get(Calendar.MINUTE);
 
         TypedFile image = new TypedFile("image/jpeg", getFile(context, photo, "clock_in.jpeg"));
@@ -92,7 +92,7 @@ public class Service {
         int day = calendar.get(Calendar.DAY_OF_MONTH);
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH)+1;
-        int hour = calendar.get(Calendar.HOUR);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int minute = calendar.get(Calendar.MINUTE);
 
         TypedFile image = new TypedFile("image/jpeg", getFile(context, photo, "clock_out.jpeg"));

@@ -40,7 +40,11 @@ public class ServiceAdapter {
     private static ServiceAdapter serviceAdapter;
 
     public static RestAdapter getServiceAdapter(Context context) {
-        if (serviceAdapter == null) {
+        return getServiceAdapter(context, false);
+    }
+
+    public static RestAdapter getServiceAdapter(Context context, boolean reset) {
+        if (serviceAdapter == null || reset) {
             serviceAdapter = new ServiceAdapter();
         }
 

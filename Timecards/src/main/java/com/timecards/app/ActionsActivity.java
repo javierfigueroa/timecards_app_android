@@ -86,7 +86,9 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_actions);
 
-
+        String dateValue = new SimpleDateFormat("LLL dd, yyyy").format(new Date());
+        TextView dateLabel = (TextView)findViewById(R.id.date_textView);
+        dateLabel.setText(dateValue);
 
         SharedPreferences settings = getSharedPreferences(LoginActivity.PREFS_NAME, 0);
         if (settings.getBoolean(LoginActivity.LOGIN_STATE, false) == false) {
@@ -250,13 +252,10 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
         TextView timeLoggedLabel = (TextView)findViewById(R.id.timeLogged_textView);
         timeLoggedLabel.setText(hours + "h:" + minutes + "m");
 
-        //date and time
+        //time
         String timeValue = new SimpleDateFormat("h:mm").format(timecard.getTimestampIn());
         TextView timeLabel = (TextView)findViewById(R.id.hhmm_textView);
         timeLabel.setText(timeValue);
-        String dateValue = new SimpleDateFormat("LLL dd, yyyy").format(timecard.getTimestampIn());
-        TextView dateLabel = (TextView)findViewById(R.id.date_textView);
-        dateLabel.setText(dateValue);
         String AMPMValue = new SimpleDateFormat("a").format(timecard.getTimestampIn());
         TextView AMPMLabel = (TextView)findViewById(R.id.amPm_textView);
         AMPMLabel.setText(AMPMValue);

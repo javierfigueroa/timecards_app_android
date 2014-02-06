@@ -127,9 +127,9 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
         mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
-        mCompany = mCompanyView.getText().toString();
-        mEmail = mEmailView.getText().toString();
-        mPassword = mPasswordView.getText().toString();
+        mCompany = mCompanyView.getText().toString().trim().toLowerCase();
+        mEmail = mEmailView.getText().toString().trim().toLowerCase();
+        mPassword = mPasswordView.getText().toString().trim().toLowerCase();
 
         boolean cancel = false;
         View focusView = null;

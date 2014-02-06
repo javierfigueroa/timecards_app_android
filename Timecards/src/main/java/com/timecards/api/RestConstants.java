@@ -38,7 +38,6 @@ public class RestConstants {
     }
 
     public void setCompany(String company) {
-
         mCompany = company;
     }
 }
