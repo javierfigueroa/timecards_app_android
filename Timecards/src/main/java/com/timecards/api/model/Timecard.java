@@ -1,5 +1,6 @@
 package com.timecards.api.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -43,10 +44,10 @@ public class Timecard {
     @JsonProperty(value = "photo_out_url")
     String photoOutUrl;
     @JsonProperty(value = "timestamp_in")
-//    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="UTC")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="UTC")
     Date timestampIn;
-//    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'.'SSSZ")
     @JsonProperty(value = "timestamp_out")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="UTC")
     Date timestampOut;
     @JsonProperty(value = "latitude_in")
     Double latitudeIn;

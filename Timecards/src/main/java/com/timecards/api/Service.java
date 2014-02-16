@@ -11,6 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.List;
+import java.util.TimeZone;
 
 import retrofit.Callback;
 import retrofit.mime.TypedFile;
@@ -62,6 +63,7 @@ public class Service {
                                Callback<Timecard> callback) {
 
         Calendar calendar = Calendar.getInstance();
+        calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
         calendar.setTime(timecard.getTimestampIn());
         int day = calendar.get(Calendar.DAY_OF_MONTH);
         int year = calendar.get(Calendar.YEAR);
@@ -88,6 +90,7 @@ public class Service {
                                Callback<Timecard> callback) {
 
         Calendar calendar = Calendar.getInstance();
+        calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
         calendar.setTime(timecard.getTimestampOut());
         int day = calendar.get(Calendar.DAY_OF_MONTH);
         int year = calendar.get(Calendar.YEAR);
