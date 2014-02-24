@@ -1,6 +1,7 @@
 package com.timecards.app;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -56,6 +57,11 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
 
     public static final int REQUEST_FROM_PROJECTS = 3;
 
+    public final static long SECOND_MILLIS = 1000;
+    public final static long MINUTE_MILLIS = SECOND_MILLIS*60;
+    public final static long HOUR_MILLIS = MINUTE_MILLIS*60;
+    public final static long DAY_MILLIS = HOUR_MILLIS*24;
+
     public static final String TAG = ActionsActivity.class.getSimpleName();
 
     public final static String GPS_LATITUDE = "GPS_LATITUDE";
@@ -76,11 +82,14 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
 
     private Boolean inBackground;
 
+    private AlertDialog mLocationServicesDialog;
+
     private final static String [] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final Context context = this;
 
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -107,14 +116,38 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
 
             public void onStatusChanged(String provider, int status, Bundle extras) {}
 
-            public void onProviderEnabled(String provider) {}
+            public void onProviderEnabled(String provider) {
+                Log.d(TAG, "Location provider enabled");
+                //Close dialog if already open
+                if (mLocationServicesDialog != null) {
+                    mLocationServicesDialog.dismiss();
+                }
+            }
 
-            public void onProviderDisabled(String provider) {}
+            public void onProviderDisabled(String provider) {
+                Log.d(TAG, "Location provider disabled");
+
+                //Close dialog if already open
+                if (mLocationServicesDialog == null || !mLocationServicesDialog.isShowing()) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                    builder.setTitle(R.string.gps_not_found_title);  // GPS not found
+                    builder.setMessage(R.string.gps_not_found_message); // Want to enable?
+                    builder.setPositiveButton(R.string.set_location_services, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                        }
+                    });
+                    mLocationServicesDialog = builder.create();
+                    mLocationServicesDialog.show();
+                }
+                return;
+            }
         };
 
         // Register the listener with the Location Manager to receive location updates
         mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mLocationListener);
         mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, mLocationListener);
+        mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
     }
 
     @Override
@@ -136,24 +169,27 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
     }
 
     private void getTodaysTimecard() {
-        showProgress(true);
-        Service.getToday(getApplicationContext(), new Callback<Timecard>() {
-            @Override
-            public void success(Timecard timecard, Response response) {
-                //Set soft timecard
-                CurrentTimecard.setCurrentTimecard(timecard);
-                //Set button states
-                setButtonStates();
-                showProgress(false);
-                getProjects();
-            }
+        if(mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
+                mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) ) {
+            showProgress(true);
+            Service.getToday(getApplicationContext(), new Callback<Timecard>() {
+                @Override
+                public void success(Timecard timecard, Response response) {
+                    //Set soft timecard
+                    CurrentTimecard.setCurrentTimecard(timecard);
+                    //Set button states
+                    setButtonStates();
+                    showProgress(false);
+                    getProjects();
+                }
 
-            @Override
-            public void failure(RetrofitError retrofitError) {
-                showProgress(false);
-                setButtonStates();
-            }
-        });
+                @Override
+                public void failure(RetrofitError retrofitError) {
+                    showProgress(false);
+                    setButtonStates();
+                }
+            });
+        }
     }
 
     private void getProjects() {
@@ -245,10 +281,9 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
         dayOfWeekLabel.setText(daysOfWeek[dayOfWeek-1]);
 
         //set logged time
-        Calendar nowCalendar = Calendar.getInstance();
-        nowCalendar.setTime(new Date());
-        int hours = nowCalendar.get(Calendar.HOUR) - c.get(Calendar.HOUR);
-        int minutes = (nowCalendar.get(Calendar.MINUTE) - c.get(Calendar.MINUTE)) - (hours * 60);
+        Date now = new Date();
+        int hours = (int)((now.getTime() - timecard.getTimestampIn().getTime()) / (SECOND_MILLIS * MINUTE_MILLIS * HOUR_MILLIS));
+        int minutes = (int)((now.getTime()/MINUTE_MILLIS) - (timecard.getTimestampIn().getTime()/MINUTE_MILLIS)) - (hours * 60);
         TextView timeLoggedLabel = (TextView)findViewById(R.id.timeLogged_textView);
         timeLoggedLabel.setText(hours + "h:" + minutes + "m");
 
@@ -313,6 +348,11 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
         return true;
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+    }
+
     /**
      * Called when the user clicks the projects button
      */
@@ -325,13 +365,27 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
      * Called when the user clicks the Send button
      */
     public void signOut(View view) {
+        //Confirmation dialog before sign out
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.sign_out);
+        builder.setMessage(R.string.are_you_sure);
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                SharedPreferences settings = getSharedPreferences(LoginActivity.PREFS_NAME, 0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putBoolean(LoginActivity.LOGIN_STATE, false);
+                editor.commit();
 
-        SharedPreferences settings = getSharedPreferences(LoginActivity.PREFS_NAME, 0);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putBoolean(LoginActivity.LOGIN_STATE, false);
-        editor.commit();
+                showLoginActivity();
+            }
+        });
+        builder.setNegativeButton(R.string.cancel_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
 
-        showLoginActivity();
+            }
+        });
+
+        builder.create().show();
     }
 
     @Override
@@ -444,14 +498,7 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
 
     public static Bitmap getBitmapFromURL(String src) {
         try{
-            Bitmap originalImage = BitmapFactory.decodeStream((InputStream)new URL(src).getContent());
-
-            //rotate original image
-            Matrix matrix = new Matrix();
-//            matrix.postRotate(CameraPreview.ROTATION_DEGREES);
-
-            Bitmap bitmap = Bitmap.createBitmap(originalImage, 0, 0, originalImage.getWidth(), originalImage.getHeight(),
-                    matrix, true);
+            Bitmap bitmap = BitmapFactory.decodeStream((InputStream) new URL(src).getContent());
             return getCircledBitmap(bitmap);
         }  catch (Exception e) {
             e.printStackTrace();

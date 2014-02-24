@@ -81,6 +81,7 @@
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/colors.xml -->
     <eat-comment />
 
+    <color name="black_header">#1c2329</color>
     <color name="black_overlay">#222c33</color>
     <color name="timecards_font_color">#AAB3BC</color>
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/build/exploded-bundles/ComAndroidSupportAppcompatV71900.aar/res/values/values.xml -->
@@ -549,6 +550,7 @@
 
     <string name="app_name">Timecards</string>
     <string name="app_name_lowercase">timecards</string>
+    <string name="are_you_sure">Are you sure?</string>
     <string name="assign_project">assign project</string>
     <string name="cancel_button">Cancel</string>
     <string name="capture_button">Capture</string>
@@ -568,6 +570,8 @@
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="gps_not_found_message">Please enable location services in order to continue using Timecards</string>
+    <string name="gps_not_found_title">Location Services Disabled</string>
     <string name="hello_world">Hello world!</string>
     <string name="loading">Loading...</string>
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings_activity_login.xml -->
@@ -580,6 +584,8 @@
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="set_location_services">Set Location Services</string>
+    <string name="sign_out">Sign Out</string>
     <string name="start_new_timecard">Start a new timecard by clocking in</string>
     <string name="time_logged">time logged</string>
     <string name="title_activity_camera">CameraActivity</string>
@@ -591,7 +597,8 @@
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/strings.xml -->
     <eat-comment />
 
-    <string name="title_activity_projects">Select a project</string>
+    <string name="title_activity_projects">Projects</string>
+    <string name="yes">Yes</string>
     <!-- From: file:/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/values/styles.xml -->
     <eat-comment />
 

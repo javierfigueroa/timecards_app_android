@@ -149,7 +149,7 @@
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:id="@+id/frameLayout"
-        android:background="#1c2329"
+        android:background="@color/black_header"
         android:layout_margin="0dp"
         android:layout_alignParentEnd="false"
         android:padding="0dp"

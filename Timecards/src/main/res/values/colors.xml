@@ -3,4 +3,5 @@
     <color name="black_overlay">#222c33</color>
     <drawable name="focused">#ff5500</drawable>
     <drawable name="selected">#FF00FF</drawable>
+    <color name="black_header">#1c2329</color>
 </resources>

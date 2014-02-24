@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5" android:versionName="1.1" package="com.timecards">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="6" android:versionName="1.2" package="com.timecards">
 
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
 

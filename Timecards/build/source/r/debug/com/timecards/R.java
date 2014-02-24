@@ -15,7 +15,11 @@ public final class R {
         public static final int abc_slide_in_top=0x7f040003;
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
-        public static final int spinner=0x7f040006;
+        public static final int slide_in_left=0x7f040006;
+        public static final int slide_in_right=0x7f040007;
+        public static final int slide_out_left=0x7f040008;
+        public static final int slide_out_right=0x7f040009;
+        public static final int spinner=0x7f04000a;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -738,12 +742,13 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f050005;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f060005;
+        public static final int abc_search_url_text_holo=0x7f060006;
         public static final int abc_search_url_text_normal=0x7f060000;
         public static final int abc_search_url_text_pressed=0x7f060001;
         public static final int abc_search_url_text_selected=0x7f060002;
-        public static final int black_overlay=0x7f060003;
-        public static final int timecards_font_color=0x7f060004;
+        public static final int black_header=0x7f060003;
+        public static final int black_overlay=0x7f060004;
+        public static final int timecards_font_color=0x7f060005;
     }
     public static final class dimen {
         public static final int abc_action_bar_default_height=0x7f080000;
@@ -1048,31 +1053,37 @@ containing a value of this type.
         public static final int action_sign_in_short=0x7f0a0010;
         public static final int app_name=0x7f0a0011;
         public static final int app_name_lowercase=0x7f0a0012;
-        public static final int assign_project=0x7f0a0013;
-        public static final int cancel_button=0x7f0a0014;
-        public static final int capture_button=0x7f0a0015;
-        public static final int clock_in_button=0x7f0a0016;
-        public static final int clock_in_clocked_button=0x7f0a0017;
-        public static final int clock_out_button=0x7f0a0018;
-        public static final int clocking_in=0x7f0a0019;
-        public static final int clocking_out=0x7f0a001a;
-        public static final int done_button=0x7f0a001b;
-        public static final int error_field_required=0x7f0a001c;
-        public static final int error_incorrect_password=0x7f0a001d;
-        public static final int error_invalid_email=0x7f0a001e;
-        public static final int error_invalid_password=0x7f0a001f;
-        public static final int hello_world=0x7f0a0020;
-        public static final int loading=0x7f0a0021;
-        public static final int login_progress_signing_in=0x7f0a0022;
-        public static final int prompt_company=0x7f0a0023;
-        public static final int prompt_email=0x7f0a0024;
-        public static final int prompt_password=0x7f0a0025;
-        public static final int start_new_timecard=0x7f0a0026;
-        public static final int time_logged=0x7f0a0027;
-        public static final int title_activity_camera=0x7f0a0028;
-        public static final int title_activity_confirmation=0x7f0a0029;
-        public static final int title_activity_login=0x7f0a002a;
-        public static final int title_activity_projects=0x7f0a002b;
+        public static final int are_you_sure=0x7f0a0013;
+        public static final int assign_project=0x7f0a0014;
+        public static final int cancel_button=0x7f0a0015;
+        public static final int capture_button=0x7f0a0016;
+        public static final int clock_in_button=0x7f0a0017;
+        public static final int clock_in_clocked_button=0x7f0a0018;
+        public static final int clock_out_button=0x7f0a0019;
+        public static final int clocking_in=0x7f0a001a;
+        public static final int clocking_out=0x7f0a001b;
+        public static final int done_button=0x7f0a001c;
+        public static final int error_field_required=0x7f0a001d;
+        public static final int error_incorrect_password=0x7f0a001e;
+        public static final int error_invalid_email=0x7f0a001f;
+        public static final int error_invalid_password=0x7f0a0020;
+        public static final int gps_not_found_message=0x7f0a0021;
+        public static final int gps_not_found_title=0x7f0a0022;
+        public static final int hello_world=0x7f0a0023;
+        public static final int loading=0x7f0a0024;
+        public static final int login_progress_signing_in=0x7f0a0025;
+        public static final int prompt_company=0x7f0a0026;
+        public static final int prompt_email=0x7f0a0027;
+        public static final int prompt_password=0x7f0a0028;
+        public static final int set_location_services=0x7f0a0029;
+        public static final int sign_out=0x7f0a002a;
+        public static final int start_new_timecard=0x7f0a002b;
+        public static final int time_logged=0x7f0a002c;
+        public static final int title_activity_camera=0x7f0a002d;
+        public static final int title_activity_confirmation=0x7f0a002e;
+        public static final int title_activity_login=0x7f0a002f;
+        public static final int title_activity_projects=0x7f0a0030;
+        public static final int yes=0x7f0a0031;
     }
     public static final class style {
         /** 
