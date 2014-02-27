@@ -282,7 +282,7 @@ public class ActionsActivity extends Activity implements DialogInterface.OnCance
 
         //set logged time
         Date now = new Date();
-        int hours = (int)((now.getTime() - timecard.getTimestampIn().getTime()) / (SECOND_MILLIS * MINUTE_MILLIS * HOUR_MILLIS));
+        int hours = (int)(((now.getTime() - timecard.getTimestampIn().getTime())/1000)/3600);
         int minutes = (int)((now.getTime()/MINUTE_MILLIS) - (timecard.getTimestampIn().getTime()/MINUTE_MILLIS)) - (hours * 60);
         TextView timeLoggedLabel = (TextView)findViewById(R.id.timeLogged_textView);
         timeLoggedLabel.setText(hours + "h:" + minutes + "m");

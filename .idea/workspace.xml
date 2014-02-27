@@ -26,22 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04e68af-07b7-41d2-bac9-3a03d1d6addc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Timecards/src/main/res/anim/slide_in_left.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Timecards/src/main/res/anim/slide_in_right.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_left.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_right.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/Timecards-Timecards.apk" afterPath="$PROJECT_DIR$/Timecards/Timecards-Timecards.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java" afterPath="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/build/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/Timecards/build/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/build/source/r/debug/com/timecards/R.java" afterPath="$PROJECT_DIR$/Timecards/build/source/r/debug/com/timecards/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/build/res/all/debug/layout/activity_actions.xml" afterPath="$PROJECT_DIR$/Timecards/build/res/all/debug/layout/activity_actions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/res/layout/activity_actions.xml" afterPath="$PROJECT_DIR$/Timecards/src/main/res/layout/activity_actions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/build/res/all/debug/layout/activity_projects.xml" afterPath="$PROJECT_DIR$/Timecards/build/res/all/debug/layout/activity_projects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/res/layout/activity_projects.xml" afterPath="$PROJECT_DIR$/Timecards/src/main/res/layout/activity_projects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/Timecards/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Timecards/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Timecards/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Timecards.iws" />
@@ -115,7 +102,7 @@
       <file leaf-file-name="ActionsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="78" selection-start="14136" selection-end="14136" vertical-scroll-proportion="-3.6538463" vertical-offset="5245" max-vertical-offset="8220">
+            <state line="284" column="92" selection-start="10852" selection-end="10852" vertical-scroll-proportion="-2.5" vertical-offset="4165" max-vertical-offset="8220">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4698#4726#0" expanded="true" />
@@ -124,15 +111,15 @@
                 <element signature="e#4916#5203#0" expanded="true" />
                 <element signature="e#5180#5181#0" expanded="true" />
                 <element signature="e#10000#10025#0" expanded="true" />
-                <element signature="e#12254#12278#0" expanded="true" />
-                <element signature="e#12728#12751#0" expanded="true" />
-                <element signature="e#14388#14405#0" expanded="true" />
-                <element signature="e#14435#14456#0" expanded="true" />
-                <element signature="e#14493#14505#0" expanded="true" />
-                <element signature="e#14507#14947#0" expanded="true" />
-                <element signature="e#14936#14937#0" expanded="true" />
-                <element signature="e#14984#15006#0" expanded="true" />
-                <element signature="e#18882#18909#0" expanded="true" />
+                <element signature="e#12218#12242#0" expanded="true" />
+                <element signature="e#12692#12715#0" expanded="true" />
+                <element signature="e#14352#14369#0" expanded="true" />
+                <element signature="e#14399#14420#0" expanded="true" />
+                <element signature="e#14457#14469#0" expanded="true" />
+                <element signature="e#14471#14911#0" expanded="true" />
+                <element signature="e#14900#14901#0" expanded="true" />
+                <element signature="e#14948#14970#0" expanded="true" />
+                <element signature="e#18846#18873#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,7 +188,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.7297297" vertical-offset="0" max-vertical-offset="1005">
+            <state line="25" column="33" selection-start="914" selection-end="919" vertical-scroll-proportion="0.9189189" vertical-offset="35" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -1225,7 +1212,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28368202" sideWeight="0.70780855" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.4989047" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32522798" sideWeight="0.4989047" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1264,7 +1251,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="0" selection-start="6966" selection-end="6966" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3060">
           <folding>
-            <element signature="e#7192#7236#0" expanded="true" />
+            <element signature="e#7192#7236#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1367,7 +1354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="78" selection-start="14136" selection-end="14136" vertical-scroll-proportion="-3.6538463" vertical-offset="5245" max-vertical-offset="8220">
+        <state line="284" column="92" selection-start="10852" selection-end="10852" vertical-scroll-proportion="-2.5" vertical-offset="4165" max-vertical-offset="8220">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4698#4726#0" expanded="true" />
@@ -1376,22 +1363,22 @@
             <element signature="e#4916#5203#0" expanded="true" />
             <element signature="e#5180#5181#0" expanded="true" />
             <element signature="e#10000#10025#0" expanded="true" />
-            <element signature="e#12254#12278#0" expanded="true" />
-            <element signature="e#12728#12751#0" expanded="true" />
-            <element signature="e#14388#14405#0" expanded="true" />
-            <element signature="e#14435#14456#0" expanded="true" />
-            <element signature="e#14493#14505#0" expanded="true" />
-            <element signature="e#14507#14947#0" expanded="true" />
-            <element signature="e#14936#14937#0" expanded="true" />
-            <element signature="e#14984#15006#0" expanded="true" />
-            <element signature="e#18882#18909#0" expanded="true" />
+            <element signature="e#12218#12242#0" expanded="true" />
+            <element signature="e#12692#12715#0" expanded="true" />
+            <element signature="e#14352#14369#0" expanded="true" />
+            <element signature="e#14399#14420#0" expanded="true" />
+            <element signature="e#14457#14469#0" expanded="true" />
+            <element signature="e#14471#14911#0" expanded="true" />
+            <element signature="e#14900#14901#0" expanded="true" />
+            <element signature="e#14948#14970#0" expanded="true" />
+            <element signature="e#18846#18873#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.7297297" vertical-offset="0" max-vertical-offset="1005">
+        <state line="25" column="33" selection-start="914" selection-end="919" vertical-scroll-proportion="0.9189189" vertical-offset="35" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
