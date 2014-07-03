@@ -1817,6 +1817,10 @@ normal
                     name="TextAppearance.AppCompat.Widget.PopupMenu.Large"
                     parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
 
+                <attr
+                    name="listPreferredItemHeightSmall"
+                    format="dimension" />
+
                 <declare-styleable name="MenuItem" >
 
                     <!-- The ID of the item. -->
@@ -1954,10 +1958,6 @@ normal
                         name="actionProviderClass"
                         format="string" />
                 </declare-styleable>
-
-                <attr
-                    name="listPreferredItemHeightSmall"
-                    format="dimension" />
 
                 <style
                     name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
@@ -7452,6 +7452,26 @@ false
     <dataSet config="main" >
         <source path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res" >
             <file
+                name="slide_in_left"
+                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_in_left.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_in_right"
+                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_in_right.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_out_left"
+                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_out_left.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_out_right"
+                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_out_right.xml"
+                qualifiers=""
+                type="anim" />
+            <file
                 name="spinner"
                 path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/spinner.xml"
                 qualifiers=""
@@ -7727,9 +7747,9 @@ false
                 </string>
                 <string name="clock_out_button" >clock out
                 </string>
-                <string name="loading" >Loading...
-                </string>
                 <string name="clocking_in" >clocking In...
+                </string>
+                <string name="loading" >Loading...
                 </string>
                 <string name="clock_in_button" >clock in
                 </string>
@@ -7970,26 +7990,6 @@ true
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
-            <file
-                name="slide_out_left"
-                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_out_left.xml"
-                qualifiers=""
-                type="anim" />
-            <file
-                name="slide_in_right"
-                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_in_right.xml"
-                qualifiers=""
-                type="anim" />
-            <file
-                name="slide_out_right"
-                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_out_right.xml"
-                qualifiers=""
-                type="anim" />
-            <file
-                name="slide_in_left"
-                path="/Users/javier/Documents/Java/Android/Timecards/Timecards/src/main/res/anim/slide_in_left.xml"
-                qualifiers=""
-                type="anim" />
         </source>
         <source path="/Users/javier/Documents/Java/Android/Timecards/Timecards/build/res/rs/debug" />
     </dataSet>

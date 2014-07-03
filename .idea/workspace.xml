@@ -27,8 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d04e68af-07b7-41d2-bac9-3a03d1d6addc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/Timecards-Timecards.apk" afterPath="$PROJECT_DIR$/Timecards/Timecards-Timecards.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java" afterPath="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java" afterPath="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Timecards.iws" />
@@ -102,25 +102,8 @@
       <file leaf-file-name="ActionsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="284" column="92" selection-start="10852" selection-end="10852" vertical-scroll-proportion="-2.5" vertical-offset="4165" max-vertical-offset="8220">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4698#4726#0" expanded="true" />
-                <element signature="e#4786#4816#0" expanded="true" />
-                <element signature="e#4884#4914#0" expanded="true" />
-                <element signature="e#4916#5203#0" expanded="true" />
-                <element signature="e#5180#5181#0" expanded="true" />
-                <element signature="e#10000#10025#0" expanded="true" />
-                <element signature="e#12218#12242#0" expanded="true" />
-                <element signature="e#12692#12715#0" expanded="true" />
-                <element signature="e#14352#14369#0" expanded="true" />
-                <element signature="e#14399#14420#0" expanded="true" />
-                <element signature="e#14457#14469#0" expanded="true" />
-                <element signature="e#14471#14911#0" expanded="true" />
-                <element signature="e#14900#14901#0" expanded="true" />
-                <element signature="e#14948#14970#0" expanded="true" />
-                <element signature="e#18846#18873#0" expanded="true" />
-              </folding>
+            <state line="284" column="92" selection-start="10852" selection-end="10852" vertical-scroll-proportion="0.0" vertical-offset="4260" max-vertical-offset="8280">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,7 +111,7 @@
       <file leaf-file-name="slide_out_left.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_left.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="3" column="35" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -137,7 +120,7 @@
       <file leaf-file-name="slide_out_right.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_right.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="6" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -146,7 +129,7 @@
       <file leaf-file-name="slide_in_right.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/anim/slide_in_right.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="6" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -155,19 +138,7 @@
       <file leaf-file-name="slide_in_left.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/anim/slide_in_left.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="30" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_selector.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/list_selector.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="5" column="30" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -175,20 +146,38 @@
       </file>
       <file leaf-file-name="activity_projects.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/activity_projects.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="33" selection-start="914" selection-end="919" vertical-scroll-proportion="0.9189189" vertical-offset="35" max-vertical-offset="1005">
+            <state line="3" column="26" selection-start="162" selection-end="162" vertical-scroll-proportion="0.023809524" vertical-offset="30" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Endpoints.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/Endpoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="17" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestConstants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="60" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -196,22 +185,13 @@
       </file>
       <file leaf-file-name="activity_actions.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/activity_actions.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3675">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="51" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -591,7 +571,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java" />
         <option value="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/ServiceAdapter.java" />
         <option value="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/Service.java" />
         <option value="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/model/Timecard.java" />
@@ -606,6 +585,7 @@
         <option value="$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_right.xml" />
         <option value="$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_left.xml" />
         <option value="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java" />
+        <option value="$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java" />
         <option value="$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml" />
       </list>
     </option>
@@ -615,7 +595,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1241" />
+    <option name="width" value="1872" />
     <option name="height" value="778" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -682,20 +662,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards-Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -776,122 +742,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -930,26 +780,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timecards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="Timecards-Timecards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1191,7 +1037,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1241" height="778" extended-state="0" />
+    <frame x="0" y="22" width="1872" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1199,7 +1045,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39513677" sideWeight="0.55648535" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39513677" sideWeight="0.55648535" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39513677" sideWeight="0.44351465" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1211,7 +1057,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24937238" sideWeight="0.67173254" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28368202" sideWeight="0.70780855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28368017" sideWeight="0.70780855" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32522798" sideWeight="0.4989047" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1240,22 +1086,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="0" selection-start="6966" selection-end="6966" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3060">
-          <folding>
-            <element signature="e#7192#7236#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ProjectsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="13" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
@@ -1264,13 +1094,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/project_list_item.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/values/strings.xml">
@@ -1281,13 +1111,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/list_selector.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/values/colors.xml">
@@ -1298,23 +1128,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/activity_actions.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/activity_projects.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/layout/activity_projects.xml">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/anim/slide_in_left.xml">
@@ -1340,9 +1170,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="329" column="16" selection-start="14769" selection-end="14769" vertical-scroll-proportion="0.33333334" vertical-offset="4801" max-vertical-offset="6555">
-          <folding />
-        </state>
+        <state line="329" column="16" selection-start="14769" selection-end="14769" vertical-scroll-proportion="0.33333334" vertical-offset="4801" max-vertical-offset="6555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/res/anim/slide_out_left.xml">
@@ -1354,31 +1182,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/app/ActionsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="92" selection-start="10852" selection-end="10852" vertical-scroll-proportion="-2.5" vertical-offset="4165" max-vertical-offset="8220">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4698#4726#0" expanded="true" />
-            <element signature="e#4786#4816#0" expanded="true" />
-            <element signature="e#4884#4914#0" expanded="true" />
-            <element signature="e#4916#5203#0" expanded="true" />
-            <element signature="e#5180#5181#0" expanded="true" />
-            <element signature="e#10000#10025#0" expanded="true" />
-            <element signature="e#12218#12242#0" expanded="true" />
-            <element signature="e#12692#12715#0" expanded="true" />
-            <element signature="e#14352#14369#0" expanded="true" />
-            <element signature="e#14399#14420#0" expanded="true" />
-            <element signature="e#14457#14469#0" expanded="true" />
-            <element signature="e#14471#14911#0" expanded="true" />
-            <element signature="e#14900#14901#0" expanded="true" />
-            <element signature="e#14948#14970#0" expanded="true" />
-            <element signature="e#18846#18873#0" expanded="true" />
-          </folding>
+        <state line="284" column="92" selection-start="10852" selection-end="10852" vertical-scroll-proportion="0.0" vertical-offset="4260" max-vertical-offset="8280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/Endpoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timecards/src/main/java/com/timecards/api/RestConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="60" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timecards/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="914" selection-end="919" vertical-scroll-proportion="0.9189189" vertical-offset="35" max-vertical-offset="1005">
+        <state line="3" column="26" selection-start="162" selection-end="162" vertical-scroll-proportion="0.023809524" vertical-offset="30" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
