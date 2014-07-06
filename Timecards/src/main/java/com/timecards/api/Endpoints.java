@@ -43,6 +43,12 @@ public interface Endpoints {
                        @Field("user[password]") String password,
                        Callback<User> callback);
 
+    @FormUrlEncoded
+    @POST(RestConstants.FORGOT_PASSWORD)
+    public void forgotPassword(@Field("user[email]") String email,
+                       @Field("user[company_name]") String company,
+                       Callback<String> callback);
+
     @Multipart
     @POST(RestConstants.CLOCK_IN)
     public void clockIn(@Part("timecard[photo_in];") retrofit.mime.TypedFile photo,

@@ -1,0 +1,94 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:background="@color/black_overlay"
+    android:clickable="true"
+    style="@style/LoginFormContainer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingTop="50dp">
+
+        <EditText
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText5"
+            android:hint="@string/first_name"
+            android:inputType="text|textNoSuggestions"
+            android:background="@drawable/formtextfield"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText4"
+            android:hint="@string/last_name"
+            android:inputType="text|textNoSuggestions"
+            android:background="@drawable/formtextfield"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText2"
+            android:hint="@string/prompt_email"
+            android:inputType="text|textNoSuggestions"
+            android:background="@drawable/formtextfield"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/formtextfield"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"
+            android:paddingRight="20dp" />
+
+        <EditText
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText"
+            android:hint="@string/web_address"
+            android:inputType="text|textNoSuggestions"
+            android:background="@drawable/formtextfield"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"
+            android:paddingRight="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/sign_up"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/greenbtn"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</ScrollView>

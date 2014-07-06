@@ -26,4 +26,28 @@
     <string name="sign_out">Sign Out</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="yes">Yes</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="web_address">web address</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">email</string>
+    <string name="prompt_password">password</string>
+    <string name="prompt_company">company name</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">sign in</string>
+    <string name="action_forgot_password">forgot your password?</string>
+    <string name="login_progress_signing_in">signing in…</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="reset_password">reset password</string>
+    <string name="password_reset">Password reset</string>
+    <string name="password_reset_message">Password reset instructions have been sent to your email</string>
+    <string name="password_reset_message_error">Something went wrong while resetting your password, please try again later</string>
+    <string name="ok">ok</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="sign_up">sign up</string>
+
 </resources>

@@ -9,7 +9,7 @@
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#222c33">
+        android:background="@color/black_overlay">
 
         <LinearLayout style="@style/LoginFormContainer"
             android:orientation="vertical">
@@ -42,7 +42,7 @@
                     android:layout_width="179dp"
                     android:layout_height="40dp"
                     android:id="@+id/company"
-                android:hint="@string/prompt_company"
+                android:hint="@string/web_address"
                     android:inputType="text|textNoSuggestions"
                 android:background="@drawable/formtextfield"
                 android:layout_gravity="center_horizontal"
@@ -93,15 +93,44 @@
                 android:background="@drawable/greenbtn"
                 android:textColor="#ffffff" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/action_forgot_password"
-                android:id="@+id/forgot_password_button"
-                android:layout_gravity="center"
-                android:textColor="@color/timecards_font_color"
-                android:background="@color/black_overlay"
-                android:visibility="invisible" />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="50dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sign_up_button"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:background="#0000"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/timecards_font_color"
+                        android:onClick="onSignUp"
+                        android:gravity="center_vertical"
+                        android:layout_margin="15dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reset_password_button"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textColor="@color/timecards_font_color"
+                        android:alpha="1"
+                        android:background="#0000"
+                        android:text="@string/reset_password"
+                        android:gravity="center_vertical"
+                        android:layout_margin="15dp" />
+                </TableRow>
+            </TableLayout>
 
         </LinearLayout>
 

@@ -1,7 +1,8 @@
 package com.timecards.app;
 
 import android.app.Activity;
-import android.content.DialogInterface;
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -18,6 +19,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.timecards.R;
 import com.timecards.api.Service;
 import com.timecards.api.model.User;
+import com.timecards.app.views.ProgressView;
 import com.timecards.libs.ProgressHUD;
 
 import java.io.IOException;
@@ -30,7 +32,7 @@ import retrofit.client.Response;
  * Activity which displays a login screen to the user, offering registration as
  * well.
  */
-public class LoginActivity extends Activity implements DialogInterface.OnCancelListener {
+public class LoginActivity extends Activity {
     /**
      * The default email to populate the email field with.
      */
@@ -63,7 +65,7 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
 
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
-
+        final Context context = this;
         // Set up the login form.
         mCompanyView = (EditText) findViewById(R.id.company);
         mEmailView = (EditText) findViewById(R.id.email);
@@ -99,6 +101,22 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        findViewById(R.id.sign_up_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.reset_password_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ResetPasswordActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -170,11 +188,7 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
         } else {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
-            showProgress(true);
-//            mAuthTask = new UserLoginTask();
-//            mAuthTask.execute((Void) null);
-
-
+            ProgressView.getInstance().showProgress(this, getString(R.string.loading));
             Service.signIn(getApplicationContext(), mEmail, mPassword, mCompany, new Callback<User>() {
                 @Override
                 public void success(User user, Response response) {
@@ -196,7 +210,7 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
 
                     editor.commit();
 
-                    showProgress(false);
+                    ProgressView.getInstance().dismiss();
                     finish();
                 }
 
@@ -204,25 +218,9 @@ public class LoginActivity extends Activity implements DialogInterface.OnCancelL
                 public void failure(RetrofitError retrofitError) {
                     mPasswordView.setError(getString(R.string.error_incorrect_password));
                     mPasswordView.requestFocus();
-                    showProgress(false);
+                    ProgressView.getInstance().dismiss();
                 }
             });
         }
-    }
-
-    /**
-     * Shows the progress UI and hides the login form.
-     */
-    private void showProgress(final boolean show) {
-        if (show) {
-            mProgressHUD = ProgressHUD.show(LoginActivity.this, getString(R.string.loading), true, true, this);
-        }else{
-            mProgressHUD.dismiss();
-        }
-    }
-
-    @Override
-    public void onCancel(DialogInterface dialogInterface) {
-        mProgressHUD.dismiss();
     }
 }
