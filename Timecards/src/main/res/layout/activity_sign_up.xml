@@ -17,7 +17,7 @@
         <EditText
             android:layout_width="179dp"
             android:layout_height="40dp"
-            android:id="@+id/editText5"
+            android:id="@+id/first_name_text"
             android:hint="@string/first_name"
             android:inputType="text|textNoSuggestions"
             android:background="@drawable/formtextfield"
@@ -29,7 +29,7 @@
         <EditText
             android:layout_width="179dp"
             android:layout_height="40dp"
-            android:id="@+id/editText4"
+            android:id="@+id/last_name_text"
             android:hint="@string/last_name"
             android:inputType="text|textNoSuggestions"
             android:background="@drawable/formtextfield"
@@ -41,7 +41,7 @@
         <EditText
             android:layout_width="179dp"
             android:layout_height="40dp"
-            android:id="@+id/editText2"
+            android:id="@+id/email_text"
             android:hint="@string/prompt_email"
             android:inputType="text|textNoSuggestions"
             android:background="@drawable/formtextfield"
@@ -51,7 +51,7 @@
             android:paddingRight="20dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/password_text"
             android:singleLine="true"
             android:maxLines="1"
             android:layout_width="179dp"
@@ -70,7 +70,7 @@
         <EditText
             android:layout_width="179dp"
             android:layout_height="40dp"
-            android:id="@+id/editText"
+            android:id="@+id/web_address_text"
             android:hint="@string/web_address"
             android:inputType="text|textNoSuggestions"
             android:background="@drawable/formtextfield"
@@ -80,7 +80,7 @@
             android:paddingRight="20dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/sign_up_button"
             android:layout_width="179dp"
             android:layout_height="40dp"
             android:layout_marginTop="16dp"

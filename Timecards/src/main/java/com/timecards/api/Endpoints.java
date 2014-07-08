@@ -49,6 +49,15 @@ public interface Endpoints {
                        @Field("user[company_name]") String company,
                        Callback<String> callback);
 
+    @FormUrlEncoded
+    @POST(RestConstants.SIGN_UP)
+    public void signUp(@Field("user[email]") String email,
+                       @Field("user[password]") String password,
+                       @Field("user[first_name]") String firstName,
+                       @Field("user[last_name]") String lastName,
+                       @Field("user[company_name]") String company,
+                       Callback<User> callback);
+
     @Multipart
     @POST(RestConstants.CLOCK_IN)
     public void clockIn(@Part("timecard[photo_in];") retrofit.mime.TypedFile photo,

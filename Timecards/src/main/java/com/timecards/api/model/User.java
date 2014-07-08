@@ -4,8 +4,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+import java.util.HashMap;
+
 /**
  * Created by javier on 9/16/13.
+ *
+ {"user":{"id":null,"tenant_id":null,"email":"y@n.co","authentication_token":null,"created_at":null,"updated_at":null,"first_name":"y","last_name":"y",
+ "company_name":"y","customer_id":null,"last_4_digits":null,"wage":"0.0","deleted_at":null},
+ "errors":{"password":["is too short (minimum is 8 characters)"]}}
  */
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -23,8 +29,18 @@ public class User {
     String email;
     @JsonProperty
     String password;
-    @JsonProperty
+    @JsonProperty(value = "company_name")
     String company;
+    @JsonProperty
+    HashMap<String, String[]> errors;
+
+    public HashMap<String, String[]> getErrors() {
+        return errors;
+    }
+
+    public void setErrors(HashMap<String, String[]> errors) {
+        this.errors = errors;
+    }
 
     public String getCompany() {
         return company;

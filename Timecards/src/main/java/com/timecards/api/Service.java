@@ -45,6 +45,22 @@ public class Service {
         service.forgotPassword(username, company, callback);
     }
 
+
+    public static void signUp(Context context,
+                                      String username,
+                                      String password,
+                                      String firstName,
+                                      String lastName,
+                                      String company,
+                                      Callback<User> callback) {
+
+        RestConstants.getInstance().setCompany("www");
+
+        Endpoints service = ServiceAdapter.getServiceAdapter(context, true).create(Endpoints.class);
+        service.signUp(username, password, firstName, lastName, company, callback);
+    }
+
+
     public static void getToday(Context context,
                                 Callback<Timecard> callback) {
 

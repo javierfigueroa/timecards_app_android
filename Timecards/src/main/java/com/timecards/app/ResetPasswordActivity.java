@@ -34,11 +34,6 @@ public class ResetPasswordActivity extends Activity{
 
             }
         });
-        builder.setNegativeButton(R.string.cancel_button, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        });
 
         builder.create().show();
     }

@@ -7,11 +7,13 @@ public class RestConstants {
 
     public static final String TAG = RestConstants.class.getSimpleName();
 
-    private final String BASE_URL = ".timecards.dev:3000/";// ".timecards.io/";
+    private final String BASE_URL = ".firehound.co:3000/";// ".timecards.io/";
 
     public static final String LOGIN_URL = "/users/sign_in.json";
 
     public static final String FORGOT_PASSWORD = "/users/password.json";
+
+    public static final String SIGN_UP = "/users?plan=silver";
 
     public static final String TODAY_TIMECARD = "/timecards/today.json";
 
@@ -40,6 +42,6 @@ public class RestConstants {
     }
 
     public void setCompany(String company) {
-        mCompany = company;
+        mCompany = company.trim().toLowerCase().replace(" ", "");
     }
 }

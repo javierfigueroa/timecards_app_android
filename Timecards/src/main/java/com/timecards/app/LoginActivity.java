@@ -40,6 +40,7 @@ public class LoginActivity extends Activity {
     public static final String LOGIN_STATE = "com.company.login.state";
     public static final String USER = "com.company.login.user";
     public static final String COMPANY = "com.company.login.company";
+    private static final int REQUEST_EXIT = 10;
 
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -108,7 +109,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, SignUpActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_EXIT);
             }
         });
 
@@ -125,7 +126,16 @@ public class LoginActivity extends Activity {
     public void onBackPressed(){
 
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        if (requestCode == REQUEST_EXIT) {
+            if (resultCode == RESULT_OK) {
+                this.finish();
+
+            }
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
