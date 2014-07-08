@@ -7,7 +7,7 @@ public class RestConstants {
 
     public static final String TAG = RestConstants.class.getSimpleName();
 
-    private final String BASE_URL = ".firehound.co:3000/";// ".timecards.io/";
+    private final String BASE_URL = ".timecards.io/";
 
     public static final String LOGIN_URL = "/users/sign_in.json";
 
@@ -38,7 +38,7 @@ public class RestConstants {
     }
 
     public String getBaseUrl() {
-        return "http://" + mCompany + BASE_URL;//"https://" + mCompany + BASE_URL;
+        return "https://" + mCompany + BASE_URL;
     }
 
     public void setCompany(String company) {
